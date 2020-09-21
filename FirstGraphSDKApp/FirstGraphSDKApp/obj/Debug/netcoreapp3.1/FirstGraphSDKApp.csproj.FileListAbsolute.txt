@@ -1,9 +1,0 @@
-C:\GitHub\MyScripts\C#\FirstGraphSDKApp\FirstGraphSDKApp\obj\Debug\netcoreapp3.1\FirstGraphSDKApp.csprojAssemblyReference.cache
-C:\GitHub\MyScripts\C#\FirstGraphSDKApp\FirstGraphSDKApp\obj\Debug\netcoreapp3.1\FirstGraphSDKApp.AssemblyInfoInputs.cache
-C:\GitHub\MyScripts\C#\FirstGraphSDKApp\FirstGraphSDKApp\obj\Debug\netcoreapp3.1\FirstGraphSDKApp.AssemblyInfo.cs
-C:\GitHub\MyScripts\C#\FirstGraphSDKApp\FirstGraphSDKApp\obj\Debug\netcoreapp3.1\FirstGraphSDKApp.csproj.CoreCompileInputs.cache
-C:\GitHub\MyScripts\C#\FirstGraphSDKApp\FirstGraphSDKApp\bin\Debug\netcoreapp3.1\FirstGraphSDKApp.exe
-C:\GitHub\MyScripts\C#\FirstGraphSDKApp\FirstGraphSDKApp\bin\Debug\netcoreapp3.1\Microsoft.Graph.dll
-C:\GitHub\MyScripts\C#\FirstGraphSDKApp\FirstGraphSDKApp\bin\Debug\netcoreapp3.1\Microsoft.Graph.Core.dll
-C:\GitHub\MyScripts\C#\FirstGraphSDKApp\FirstGraphSDKApp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-C:\GitHub\MyScripts\C#\FirstGraphSDKApp\FirstGraphSDKApp\obj\Debug\netcoreapp3.1\FirstGraphSDKApp.csproj.CopyComplete
