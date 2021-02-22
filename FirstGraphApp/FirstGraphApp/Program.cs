@@ -30,12 +30,10 @@ namespace FirstGraphApp
 
             var users = await graphClient.Users
                 .Request()
+                .Select("displayName")
                 .GetAsync();
             // look at and report results
-            foreach(User in users)
-            {
-
-            }
+                Console.WriteLine(users[0].DisplayName);
         }
     }
 }
