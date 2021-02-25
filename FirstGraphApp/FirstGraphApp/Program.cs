@@ -30,10 +30,21 @@ namespace FirstGraphApp
 
             var users = await graphClient.Users
                 .Request()
-                .Select("displayName")
+                .Select("displayName,Id")
                 .GetAsync();
             // look at and report results
-                Console.WriteLine(users[0].DisplayName);
+            var count = users.Count;
+            Console.WriteLine("There are " + count + "users in the tenant.");
+            foreach(var user in users)
+            {
+                var UserID = user.Id;
+                Console.WriteLine("User: "+user.DisplayName);
+                Console.WriteLine("ID: " + UserID);
+                Console.WriteLine();
+            }
+            
+
+            Console.ReadLine();
         }
     }
 }
