@@ -100,7 +100,7 @@ namespace MessagePurge
             };
 
             
-            Console.WriteLine(filter);
+            Console.WriteLine("Getting ID for Message...");
             var messages = graphClient.Users[user].Messages
                 .Request(options)
                 .Select(m => new {
@@ -110,17 +110,13 @@ namespace MessagePurge
                 .GetAsync()
                 .Result;
 
-            Console.WriteLine("Graph SDK Result");
-            Console.WriteLine(messages[0].Sender.EmailAddress.Address);
-            Console.WriteLine(messages[0].Subject);
-            //Console.WriteLine(messages[0].Subject);
+            var mID = messages[0].Id;
+            Console.WriteLine(mID);
 
-             //Direct query using HTTPClient (for beta endpoint calls or not available in Graph SDK)
-            //HttpClient httpClient = GetAuthenticatedHTTPClient(config);
-            //Uri Uri = new Uri("https://graph.microsoft.com/v1.0/users?$top=1");
-            //var httpResult = httpClient.GetStringAsync(Uri).Result;
-            //Console.WriteLine("HTTP Result");
-            //Console.WriteLine(httpResult);
+            Console.WriteLine("Deleting Message...");
+            await graphClient.Users[user].Messages[mID]
+                .Request()
+                .DeleteAsync();
         }
     }
 }
