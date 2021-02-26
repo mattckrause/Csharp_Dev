@@ -103,15 +103,15 @@ namespace MessagePurge
             Console.WriteLine(filter);
             var messages = graphClient.Users[user].Messages
                 .Request(options)
-                //.Select(m => new {
-               //     m.Sender,
-               //     m.Subject
-                //})
+                .Select(m => new {
+                    m.Sender,
+                    m.Subject
+                })
                 .GetAsync()
                 .Result;
 
             Console.WriteLine("Graph SDK Result");
-            Console.WriteLine(messages[0].From.EmailAddress.Address);
+            Console.WriteLine(messages[0].Sender.EmailAddress.Address);
             Console.WriteLine(messages[0].Subject);
             //Console.WriteLine(messages[0].Subject);
 
