@@ -14,6 +14,7 @@ namespace MessagePurge
         private static GraphServiceClient _graphServiceClient;
         private static HttpClient _httpClient;
 
+        //Function to look up App Registration settings from .Json file
         private static IConfigurationRoot LoadAppSettings()
         {
             try
@@ -41,6 +42,7 @@ namespace MessagePurge
             }
         }
 
+        //Function to set up the AUTH Provider
         private static IAuthenticationProvider CreateAuthorizationProvider(IConfigurationRoot config)
         {
             var clientId = config["applicationId"];
@@ -59,6 +61,7 @@ namespace MessagePurge
             return new MsalAuthenticationProvider(cca, scopes.ToArray());
         }
 
+        //Function to use the SDK to make the graph call
         private static GraphServiceClient GetAuthenticatedGraphClient(IConfigurationRoot config)
         {
             var authenticationProvider = CreateAuthorizationProvider(config);
@@ -66,6 +69,7 @@ namespace MessagePurge
             return _graphServiceClient;
         }
 
+        //function to use REST to make the graph call
         private static HttpClient GetAuthenticatedHTTPClient(IConfigurationRoot config)
         {
             var authenticationProvider = CreateAuthorizationProvider(config);
@@ -75,6 +79,11 @@ namespace MessagePurge
 
         static void Main(string[] args)
         {
+            //var initialization
+            string user = "mkrause@ehloexchange.net";
+            string messageID = "<f9fc19a698b64395b6faddd08154c6d4-JFBVALKQOJXWILKCJQZFA7CGNRXXO7CGMFUWY2LOM5DGY33XON6FG3LUOA======@microsoft.com>";
+            var filter = "internetMessageId eq \'"+messageID+"\'";
+
             var config = LoadAppSettings();
             if (null == config)
             {
@@ -84,22 +93,34 @@ namespace MessagePurge
 
             //Query using Graph SDK (preferred when possible)
             GraphServiceClient graphClient = GetAuthenticatedGraphClient(config);
+            //setting up queries
             List<QueryOption> options = new List<QueryOption>
             {
-                new QueryOption("$top", "1")
+                new QueryOption("$filter", filter)
             };
 
-            var graphResult = graphClient.Users.Request(options).GetAsync().Result;
+            
+            Console.WriteLine(filter);
+            var messages = graphClient.Users[user].Messages
+                .Request(options)
+                //.Select(m => new {
+               //     m.Sender,
+               //     m.Subject
+                //})
+                .GetAsync()
+                .Result;
+
             Console.WriteLine("Graph SDK Result");
-            Console.WriteLine(graphResult[0].DisplayName);
+            Console.WriteLine(messages[0].From.EmailAddress.Address);
+            Console.WriteLine(messages[0].Subject);
+            //Console.WriteLine(messages[0].Subject);
 
              //Direct query using HTTPClient (for beta endpoint calls or not available in Graph SDK)
-            HttpClient httpClient = GetAuthenticatedHTTPClient(config);
-            Uri Uri = new Uri("https://graph.microsoft.com/v1.0/users?$top=1");
-            var httpResult = httpClient.GetStringAsync(Uri).Result;
-
-            Console.WriteLine("HTTP Result");
-            Console.WriteLine(httpResult);
+            //HttpClient httpClient = GetAuthenticatedHTTPClient(config);
+            //Uri Uri = new Uri("https://graph.microsoft.com/v1.0/users?$top=1");
+            //var httpResult = httpClient.GetStringAsync(Uri).Result;
+            //Console.WriteLine("HTTP Result");
+            //Console.WriteLine(httpResult);
         }
     }
 }
