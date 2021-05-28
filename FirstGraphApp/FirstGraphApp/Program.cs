@@ -31,6 +31,7 @@ namespace FirstGraphApp
             var users = await graphClient.Users
                 .Request()
                 .Select("displayName,Id")
+                .Header("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/18.17763")
                 .GetAsync();
             // look at and report results
             var count = users.Count;
