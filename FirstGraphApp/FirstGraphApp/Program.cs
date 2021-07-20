@@ -35,16 +35,15 @@ namespace FirstGraphApp
                 .GetAsync();
             // look at and report results
             var count = users.Count;
-            Console.WriteLine("There are " + count + "users in the tenant.");
+            Console.WriteLine($"There are {count} users in the tenant.");
             foreach(var user in users)
             {
                 var UserID = user.Id;
-                Console.WriteLine("User: "+user.DisplayName);
-                Console.WriteLine("ID: " + UserID);
+                Console.WriteLine($"User: {user.DisplayName}");
+                Console.WriteLine($"ID: {UserID}");
                 Console.WriteLine();
             }
             
-
             Console.ReadLine();
         }
     }
