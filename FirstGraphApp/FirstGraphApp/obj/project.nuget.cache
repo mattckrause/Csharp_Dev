@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "o/IxBekZXcmqEf68Vd6CRKXTjiXtweFjSdOCeVzkAMGngS+7dymk5iZy7ojoyBx83OGL2y8eUzBc9jJ4QXh+jw==",
+  "dgSpecHash": "hhFzhTNaXm/J5ysYOppnBqilXy7jZZUGeDsUrl2vftWt7uAIGnFkBN6won2BPlXCPpepCa7+u79xS3VVbqLT3g==",
   "success": true,
   "projectFilePath": "C:\\GitHub\\AttemptAtCoding\\FirstGraphApp\\FirstGraphApp\\FirstGraphApp.csproj",
   "expectedPackageFiles": [
@@ -101,7 +101,8 @@
     "C:\\Users\\makrause\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\makrause\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\makrause\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\makrause\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\makrause\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\makrause\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
   ],
   "logs": []
 }

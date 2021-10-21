@@ -15,7 +15,7 @@ namespace FirstGraphApp
             //creat variables
             string clientID = "fa066690-a151-458d-a393-7d8459853c83";
             string tenantID = "d4023def-41d0-46cd-922f-985e54a71bd4";
-            string clientSecret = "P1f_Xp-~9f5brS5-A0g8eUEgXhkX~YiSOc";
+            string clientSecret = "IyC7Q~LshfpTQA-l9dV4S44LDfUPs1Th.bmTS";
             //create client application
             IConfidentialClientApplication confidentialClientApplication = ConfidentialClientApplicationBuilder
                 .Create(clientID)

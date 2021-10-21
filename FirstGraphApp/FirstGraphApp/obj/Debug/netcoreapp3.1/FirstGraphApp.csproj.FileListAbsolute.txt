@@ -1,4 +1,3 @@
-C:\GitHub\AttemptAtCoding\FirstGraphApp\FirstGraphApp\obj\Debug\netcoreapp3.1\FirstGraphApp.csprojAssemblyReference.cache
 C:\GitHub\AttemptAtCoding\FirstGraphApp\FirstGraphApp\obj\Debug\netcoreapp3.1\FirstGraphApp.AssemblyInfoInputs.cache
 C:\GitHub\AttemptAtCoding\FirstGraphApp\FirstGraphApp\obj\Debug\netcoreapp3.1\FirstGraphApp.AssemblyInfo.cs
 C:\GitHub\AttemptAtCoding\FirstGraphApp\FirstGraphApp\obj\Debug\netcoreapp3.1\FirstGraphApp.csproj.CoreCompileInputs.cache
@@ -6,7 +5,6 @@ C:\GitHub\AttemptAtCoding\FirstGraphApp\FirstGraphApp\bin\Debug\netcoreapp3.1\Fi
 C:\GitHub\AttemptAtCoding\FirstGraphApp\FirstGraphApp\bin\Debug\netcoreapp3.1\Microsoft.Graph.dll
 C:\GitHub\AttemptAtCoding\FirstGraphApp\FirstGraphApp\bin\Debug\netcoreapp3.1\Microsoft.Graph.Core.dll
 C:\GitHub\AttemptAtCoding\FirstGraphApp\FirstGraphApp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-C:\GitHub\AttemptAtCoding\FirstGraphApp\FirstGraphApp\obj\Debug\netcoreapp3.1\FirstGraphApp.csproj.CopyComplete
 C:\GitHub\AttemptAtCoding\FirstGraphApp\FirstGraphApp\bin\Debug\netcoreapp3.1\FirstGraphApp.deps.json
 C:\GitHub\AttemptAtCoding\FirstGraphApp\FirstGraphApp\bin\Debug\netcoreapp3.1\FirstGraphApp.runtimeconfig.json
 C:\GitHub\AttemptAtCoding\FirstGraphApp\FirstGraphApp\bin\Debug\netcoreapp3.1\FirstGraphApp.runtimeconfig.dev.json
@@ -17,3 +15,5 @@ C:\GitHub\AttemptAtCoding\FirstGraphApp\FirstGraphApp\bin\Debug\netcoreapp3.1\Mi
 C:\GitHub\AttemptAtCoding\FirstGraphApp\FirstGraphApp\obj\Debug\netcoreapp3.1\FirstGraphApp.dll
 C:\GitHub\AttemptAtCoding\FirstGraphApp\FirstGraphApp\obj\Debug\netcoreapp3.1\FirstGraphApp.pdb
 C:\GitHub\AttemptAtCoding\FirstGraphApp\FirstGraphApp\obj\Debug\netcoreapp3.1\FirstGraphApp.genruntimeconfig.cache
+C:\GitHub\AttemptAtCoding\FirstGraphApp\FirstGraphApp\obj\Debug\netcoreapp3.1\FirstGraphApp.csproj.AssemblyReference.cache
+C:\GitHub\AttemptAtCoding\FirstGraphApp\FirstGraphApp\obj\Debug\netcoreapp3.1\FirstGraphApp.GeneratedMSBuildEditorConfig.editorconfig
