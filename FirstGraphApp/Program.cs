@@ -25,6 +25,7 @@ namespace FirstGraphApp
 
             //Create an authentication provider by passing in a client application
             ClientCredentialProvider authProvider = new ClientCredentialProvider(confidentialClientApplication);
+
             // Create a new instance of GraphServiceClient with the authentication provider.
             GraphServiceClient graphClient = new GraphServiceClient(authProvider);
 
